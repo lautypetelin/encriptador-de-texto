@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador de texto | Alura Challenge</title>
+    <link rel="stylesheet" href="styles/style.css">
+  </head>
+  <body>
+
+    <header class="header">
+      <img class="header__logo" src="assets/logo.png" alt="Logo de Alura.">
+      <h1 class="header__titulo">Encriptador de Texto</h1>
+    </header>
+
+    <main class="main">
+
+      <section class="main__section1">
+
+        <div class="main__section1__caja-texto">
+          <textarea class="caja-texto" placeholder="Ingrese el texto aqui"></textarea>
+        </div>
+        <div class="main__section1__alerta">
+          <img class="signo-exclamacion" src="assets/exclamacion.png" alt="Signo de exclamación.">
+          <p class="alerta">Solo letras minúsculas y sin acentos</p>
+        </div>
+        <div class="main__section1__botones">
+          <button class="btn-encriptar" onclick="encriptar();">Encriptar</button>
+          <button class="btn-desencriptar" onclick="desencriptar();">Desencriptar</button>
+        </div>
+      </section>
+
+      <section class="main__section2">
+        <div class="main__section2__muneco">
+          <img src="assets/muneco.png" alt="Muñeco buscando algo.">
+        </div>
+        <div class="main__section2__resultado">
+          <p class="resultado"></p>
+        </div>
+        <div class="main__section2__avisos">
+          <h3 class="aviso1">Ningún mensaje fue<br>encontrado</h3>
+          <p class="aviso2">Ingresa el texto que desees encriptar o<br>desencriptar.</p>
+        </div>
+        <div class="main__section2__copiar">
+          <button class="btn-copiar" onclick="copiarTexto();">Copiar</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Copyright &copy Desarrollado por Lautaro Petelin</p>
+      <div class="footer__redes">
+        <div class="footer__redes__linkedin">
+          <a href="https://www.linkedin.com/in/lautaro-petelin/" target="_blank">
+            <ion-icon name="logo-github" size="large"></ion-icon>
+          </a>
+        </div>
+        <div class="footer__redes__github">
+          <a href="https://github.com/lautypetelin" target="_blank">
+            <ion-icon name="logo-linkedin" size="large"></ion-icon>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

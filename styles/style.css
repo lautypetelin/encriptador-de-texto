@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+:root{
+    --color-primario: #F4F4FC;
+    --color-secundario: #FFFFFF;
+    --color-terciario: #0A3871;
+    --color-informacion: #495057;
+    --color-btn: #D8DFE8;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: var(--color-primario);
+    max-width: 1440px;
+    margin: auto;
+}
+
+/*Header*/
+.header{
+    width: 100%;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 50px;
+}
+
+.header__logo{
+    padding-left: 60px;
+}
+
+.header__titulo{
+    margin: auto;
+    font-size: 3.5rem;
+    color: var(--color-terciario);
+}
+
+.main{
+    display: flex;
+}
+
+.main__section1{
+    width: 60%;
+    padding: 48px 22px 22px 200px;
+    margin: auto;
+}
+
+.caja-texto{
+    height: 500px;
+    width: 90%;
+    border: none;
+    background-color: var(--color-primario);
+    cursor: text;
+    color: var(--color-terciario);
+    font-size: 2rem;
+    padding: 10px 8px;
+}
+
+.main__section2{
+    width: 40%;
+}
+
+.caja-texto:focus{
+    outline: none;
+}
+
+.caja-texto::placeholder{
+    color: var(--color-terciario);
+}
+
+.main__section1__alerta{
+    display: flex;
+    color: var(--color-informacion);
+    gap: 10px;
+    margin: 15px 0;
+}
+    
+.main__section1__botones{
+    display: flex;
+    gap: 24px;
+}
+    
+.btn-encriptar{
+    width: 328px;
+    height: 67px;
+    border-radius: 32px;
+    background-color: var(--color-terciario);
+    color: var(--color-btn);
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-desencriptar{
+    width: 328px;
+    height: 67px;
+    border-radius: 32px;
+    background-color: var(--color-btn);
+    color: var(--color-terciario);
+    font-size: 1rem;
+    border: 1px solid var(--color-terciario);
+    cursor: pointer;
+}
+
+.main__section2{
+    background-color: var(--color-secundario);
+    border-radius: 24px;
+    text-align: center;
+    padding-top: 6%;
+}
+
+.main__section2__resultado{
+    margin-bottom: 40px;
+}
+
+.main__section2__avisos{
+    display: flex;
+    flex-direction: column;
+    margin: 12%;
+}
+
+.main__section2__copiar{
+    display: flex;
+    justify-content: center;
+}
+
+.btn-copiar{
+    width: 328px;
+    height: 67px;
+    border-radius: 32px;
+    background-color: var(--color-terciario);
+    color: var(--color-btn);
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.footer{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__redes{
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+    gap: 25px;
+}
